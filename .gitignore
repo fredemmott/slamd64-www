@@ -1,0 +1,5 @@
+moc_*
+*.o
+Makefile
+slamd64-com
+.slamd64-com
