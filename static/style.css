@@ -10,6 +10,11 @@ body {
 	max-width: 65em;
 }
 
+.newsInfo {
+	font-style: italic;
+	font-size: smaller;
+}
+
 #externalLinks {
 	background-color: #568;
 	color: #ddf;

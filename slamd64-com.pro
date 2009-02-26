@@ -7,5 +7,5 @@ CONFIG += debug
 LIBS += -lFastCgiQt
 
 # Input
-HEADERS += StaticPagesService.h Slamd64Website.h
-SOURCES += StaticPagesService.cpp Slamd64Website.cpp main.cpp
+HEADERS += DatabaseProvider.h NewsService.h StaticPagesService.h Slamd64Website.h
+SOURCES += DatabaseProvider.cpp NewsService.cpp StaticPagesService.cpp Slamd64Website.cpp main.cpp

@@ -2,7 +2,7 @@
 <xsl:stylesheet
 	version="2.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-	xmlns:x="http://builds.slamd64.com/1.0"
+	xmlns:x="http://slamd64.com/1.0"
 	xmlns="http://www.w3.org/1999/xhtml"
 >
 	<xsl:output method="xhtml" indent="yes" />
@@ -11,8 +11,8 @@
 			<head>
 				<title>
 					Slamd64
-					<xsl:if test="//*:title">
-						:: <xsl:value-of select='//*:title' />
+					<xsl:if test="//*:head/*:title">
+						:: <xsl:value-of select='/*/*:head/*:title' />
 					</xsl:if>
 				</title>
 				<link rel='stylesheet' type='text/css' href='{$root}/static/style.css' />
@@ -87,6 +87,6 @@
 								<dd><a href='http://builds.slamd64.com'>builds.slamd64.com</a></dd>
 							</dl>
 						</div>
-						<xsl:if test="//*:title[not (@showInBody = 'false')]">
-							<h2><xsl:value-of select='//*:title' /></h2>
+						<xsl:if test="//*:head/*:title[not (@showInBody = 'false')]">
+							<h2><xsl:value-of select='//*:head/*:title' /></h2>
 						</xsl:if>
