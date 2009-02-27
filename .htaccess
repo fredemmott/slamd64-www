@@ -1,0 +1,9 @@
+RewriteEngine on
+# / is news
+RewriteRule ^$ news/
+# If a flat file or directory with the requested name exists, allow it through without rewrite (eg /static/)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+# Otherwise, pass it through slamd64-website.fcgi
+RewriteRule ^(.*)$ slamd64-website.fcgi/$1 [L,NS]
