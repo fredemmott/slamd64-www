@@ -30,6 +30,17 @@
 				</script>
 			</head>
 			<body>
+				<div id='externalLinks'>
+					<h2>Related Sites:</h2>
+					<dl>
+						<dt>Bugtracker:</dt>
+						<dd><a href='http://bugs.slamd64.com'>bugs.slamd64.com</a></dd>
+						<dt>Forums:</dt>
+						<dd><a href='http://builds.slamd64.com'>forums.slamd64.com</a></dd>
+						<dt>Extra Packages:</dt>
+						<dd><a href='http://builds.slamd64.com'>builds.slamd64.com</a></dd>
+					</dl>
+				</div>
 				<!--
 				<div id='announce'>
 					<p>
@@ -76,17 +87,6 @@
 				<div id='mainFrame'>
 					<div id='content'>
 						<h1><a href='{$root}/'><img src='{$root}/static/slamd64.png' alt='Slamd64' /></a></h1>
-						<div id='externalLinks'>
-							<h2>Related Sites:</h2>
-							<dl>
-								<dt>Bugtracker:</dt>
-								<dd><a href='http://bugs.slamd64.com'>bugs.slamd64.com</a></dd>
-								<dt>Forums:</dt>
-								<dd><a href='http://builds.slamd64.com'>forums.slamd64.com</a></dd>
-								<dt>Extra Packages:</dt>
-								<dd><a href='http://builds.slamd64.com'>builds.slamd64.com</a></dd>
-							</dl>
-						</div>
 						<xsl:if test="//*:head/*:title[not (@showInBody = 'false')]">
 							<h2><xsl:value-of select='//*:head/*:title' /></h2>
 						</xsl:if>

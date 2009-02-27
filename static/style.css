@@ -10,6 +10,39 @@ body {
 	max-width: 65em;
 }
 
+#mirrorsTable {
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+#mirrorsTable td {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#mirrorsTable .oddRow
+{
+	background-color: rgba(0, 0, 0, 0.05);
+}
+#mirrorsTable .evenRow
+{
+	background-color: rgba(0, 0, 0, 0.02);
+}
+
+.mirrorCountry {
+	border-bottom: 1px solid #568;
+}
+
+.mirrorName {
+	text-align: left;
+}
+
+#mirrorsTable td {
+	text-align: center;
+}
+
 .newsInfo {
 	font-style: italic;
 	font-size: smaller;
@@ -78,6 +111,11 @@ img {
 
 #content {
 	margin: 1em;
+}
+
+#bigContainer {
+	border: 1px solid green;
+
 }
 
 div#beg{
