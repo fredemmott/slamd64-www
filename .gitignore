@@ -1,5 +1,6 @@
 moc_*
 *.o
 Makefile
-slamd64-com
-.slamd64-com
+slamd64-website
+slamd64-website.fcgi
+.slamd64-website
