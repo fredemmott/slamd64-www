@@ -46,7 +46,7 @@
 							<div><a href="{$root}/about">About</a></div>
 						</li>
 						<li class="{if(/*:html/*:head/*:meta[@name='pageName' and @content='contact']) then 'activeLink' else 'inactiveLink'}">
-							<div><a href="{$root}/get">Download</a></div>
+							<div><a href="{$root}/download">Download</a></div>
 						</li>
 						<li class="{if(/*:html/*:head/*:meta[@name='pageName' and @content='how-to']) then 'activeLink' else 'inactiveLink'}">
 							<div><a href="{$root}/support">Support</a></div>
@@ -76,17 +76,19 @@
 				<div id='mainFrame'>
 					<div id='content'>
 						<h1><a href='{$root}/'><img src='{$root}/static/slamd64.png' alt='Slamd64' /></a></h1>
-						<div id='externalLinks'>
-							<h2>Related Sites:</h2>
-							<dl>
-								<dt>Bugtracker:</dt>
-								<dd><a href='http://bugs.slamd64.com'>bugs.slamd64.com</a></dd>
-								<dt>Forums:</dt>
-								<dd><a href='http://builds.slamd64.com'>forums.slamd64.com</a></dd>
-								<dt>Extra Packages:</dt>
-								<dd><a href='http://builds.slamd64.com'>builds.slamd64.com</a></dd>
-							</dl>
-						</div>
+						<xsl:if test='not //*:body/*:table[position() = 1]'>
+							<div id='externalLinks'>
+								<h2>Related Sites:</h2>
+								<dl>
+									<dt>Bugtracker:</dt>
+									<dd><a href='http://bugs.slamd64.com'>bugs.slamd64.com</a></dd>
+									<dt>Forums:</dt>
+									<dd><a href='http://builds.slamd64.com'>forums.slamd64.com</a></dd>
+									<dt>Extra Packages:</dt>
+									<dd><a href='http://builds.slamd64.com'>builds.slamd64.com</a></dd>
+								</dl>
+							</div>
+						</xsl:if>
 						<xsl:if test="//*:head/*:title[not (@showInBody = 'false')]">
 							<h2><xsl:value-of select='//*:head/*:title' /></h2>
 						</xsl:if>

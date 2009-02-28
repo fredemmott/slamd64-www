@@ -1,6 +1,3 @@
-<style type='text/css'>
-	#externalLinks { display: none; }
-</style>
 <table id='mirrorsTable'>
 	<xsl:for-each select="//x:location">
 		<tr><th colspan='4' class='mirrorCountry'><xsl:value-of select='x:name' /></th></tr>

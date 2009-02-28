@@ -6,7 +6,7 @@
 
 void Slamd64Website::loadServices()
 {
-	addService("get", MirrorsService::create);
+	addService("download", MirrorsService::create);
 	addService("", StaticPagesService::create);
 	addService("news", NewsService::create);
 }
