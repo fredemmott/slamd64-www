@@ -21,7 +21,6 @@ void StaticPagesService::showStaticPage(const QString& pageName)
 		<< "about"
 		<< "support"
 		<< "thanks"
-		<< "contact"
 	;
 	if(validPages.contains(pageName))
 	{
