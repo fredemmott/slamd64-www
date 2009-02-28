@@ -26,6 +26,10 @@ void MirrorsService::listMirrors()
 	xmlOut.writeStartDocument();
 
 	xmlOut.writeStartElement("mirrors");
+	xmlOut.writeStartElement("meta");
+	xmlOut.writeAttribute("name", "pageName");
+	xmlOut.writeAttribute("content", "download");
+	xmlOut.writeEndElement();
 	QSqlQuery query(DatabaseProvider::database());
 	QMap<QString, int> locations;
 	query.exec("SELECT name, id FROM slamd64_mirror_locations");

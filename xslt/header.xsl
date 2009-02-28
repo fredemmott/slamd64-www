@@ -39,22 +39,22 @@
 				-->
 				<div id="menu">
 					<ul id="nav">
-						<li class="{if(/*:html/*:head/*:meta[@name='pageName']) then 'inactiveLink' else 'activeLink'}" >
+						<li class="{if(//*:meta[@name='pageName']) then 'inactiveLink' else 'activeLink'}" >
 							<div><a href="{$root}/">Home</a></div>
 						</li>
-						<li class="{if(/*:html/*:head/*:meta[@name='pageName' and @content='about']) then 'activeLink' else 'inactiveLink'}">
+						<li class="{if(//*:meta[@name='pageName' and @content='about']) then 'activeLink' else 'inactiveLink'}">
 							<div><a href="{$root}/about">About</a></div>
 						</li>
-						<li class="{if(/*:html/*:head/*:meta[@name='pageName' and @content='contact']) then 'activeLink' else 'inactiveLink'}">
+						<li class="{if(//*:meta[@name='pageName' and @content='download']) then 'activeLink' else 'inactiveLink'}">
 							<div><a href="{$root}/download">Download</a></div>
 						</li>
-						<li class="{if(/*:html/*:head/*:meta[@name='pageName' and @content='how-to']) then 'activeLink' else 'inactiveLink'}">
+						<li class="{if(//*:meta[@name='pageName' and @content='support']) then 'activeLink' else 'inactiveLink'}">
 							<div><a href="{$root}/support">Support</a></div>
 						</li>
-						<li class="{if(/*:html/*:head/*:meta[@name='pageName' and @content='submission']) then 'activeLink' else 'inactiveLink'}">
+						<li class="{if(//*:meta[@name='pageName' and @content='thanks']) then 'activeLink' else 'inactiveLink'}">
 							<div><a href="{$root}/thanks">Thanks</a></div>
 						</li>
-						<li class="{if(/*:html/*:head/*:meta[@name='pageName' and @content='submission']) then 'activeLink' else 'inactiveLink'}">
+						<li class="{if(//*:meta[@name='pageName' and @content='contact']) then 'activeLink' else 'inactiveLink'}">
 							<div><a href="{$root}/contact">Contact</a></div>
 						</li>
 					</ul>
