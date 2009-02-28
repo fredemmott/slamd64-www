@@ -91,7 +91,7 @@ a:hover {
 	background-color: #ddf;
 	padding: 0px;
 	padding-top: 0px;
-	max-width: 80em;
+	max-width: 65em;
 }
 
 h1 {
@@ -193,23 +193,6 @@ ul#nav li.activeLink a {
 	margin-top: 3ex;
 }
 
-ul#categories {
-	list-style-type: none;
-	text-align: center;
-}
-ul#categories li {
-	float: left;
-	width: 26%;
-}
-
-ul#categories li.column0 {
-	margin-left: 10%;
-}
-
-ul#categories li.column2 {
-	clear: right;
-}
-
 hr {
 	border: none;
 	width: 95%;
@@ -222,42 +205,6 @@ div#footer hr{
 	border: none;
 	background-color: #67a;
 	height: 1px;
-}
-
-.PackagesTable {
-	width: 100%;
-	border: none;
-	border-collapse: collapse;
-	text-align: left;
-}
-
-.PackagesTable .oddRow {
-	background-color: #d3d3f3;
-}
-
-.quotedCommand {
-	font-family: monospace;
-	border: 1px solid rgba(0,0,0,0.1);
-	background-color: rgba(0,0,0,0.1);
-	padding: 2px;
-	white-space: pre;
-	margin: 1px;
-	display: inline-block;
-}
-
-div.quotedCommand {
-	display: block;
-	clear: both;
-}
-
-.fileName {
-	font-family: monospace;
-	font-weight: bold;
-}
-
-.placeHolder {
-	font-style: italic;
-	background-color: rgba(255, 255, 0, 0.4);
 }
 
 div.altContent {
