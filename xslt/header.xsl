@@ -12,7 +12,7 @@
 				<title>
 					Slamd64
 					<xsl:if test="//*:head/*:title">
-						:: <xsl:value-of select='/*/*:head/*:title' />
+						:: <xsl:value-of select='//*:head/*:title' />
 					</xsl:if>
 				</title>
 				<link rel='stylesheet' type='text/css' href='{$root}/static/style.css' />
@@ -73,7 +73,7 @@
 				<div id='mainFrame'>
 					<div id='content'>
 						<h1><a href='{$root}/'><img src='{$root}/static/slamd64.png' alt='Slamd64' /></a></h1>
-						<xsl:if test='not //*:body/*:table[position() = 1]'>
+						<xsl:if test="not(//*:meta[@name='pageName' and @content='download'])">
 							<div id='externalLinks'>
 								<h2>Related Sites:</h2>
 								<dl>
