@@ -26,9 +26,12 @@ void MirrorsService::listMirrors()
 	xmlOut.writeStartDocument();
 
 	xmlOut.writeStartElement("mirrors");
-	xmlOut.writeStartElement("meta");
-	xmlOut.writeAttribute("name", "pageName");
-	xmlOut.writeAttribute("content", "download");
+	xmlOut.writeStartElement("head");
+		xmlOut.writeStartElement("meta");
+			xmlOut.writeAttribute("name", "pageName");
+			xmlOut.writeAttribute("content", "download");
+		xmlOut.writeEndElement();
+		xmlOut.writeTextElement("title", tr("Download"));
 	xmlOut.writeEndElement();
 	QSqlQuery query(DatabaseProvider::database());
 	QMap<QString, int> locations;
