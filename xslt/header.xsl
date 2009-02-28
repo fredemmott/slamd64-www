@@ -54,9 +54,6 @@
 						<li class="{if(//*:meta[@name='pageName' and @content='thanks']) then 'activeLink' else 'inactiveLink'}">
 							<div><a href="{$root}/thanks">Thanks</a></div>
 						</li>
-						<li class="{if(//*:meta[@name='pageName' and @content='contact']) then 'activeLink' else 'inactiveLink'}">
-							<div><a href="{$root}/contact">Contact</a></div>
-						</li>
 					</ul>
 					<div id='beg'>
 						<form action='https://www.paypal.com/cgi-bin/webscr' method='post'>
