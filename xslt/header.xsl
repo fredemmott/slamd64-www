@@ -80,7 +80,9 @@
 									<dt>Bugtracker:</dt>
 									<dd><a href='http://bugs.slamd64.com'>bugs.slamd64.com</a></dd>
 									<dt>Forums:</dt>
-									<dd><a href='http://builds.slamd64.com'>forums.slamd64.com</a></dd>
+									<dd><a href='http://forums.slamd64.com'>forums.slamd64.com</a></dd>
+									<dt>Mailing Lists:</dt>
+									<dd><a href='http://lists.slamd64.com'>lists.slamd64.com</a></dd>
 									<dt>Extra Packages:</dt>
 									<dd><a href='http://builds.slamd64.com'>builds.slamd64.com</a></dd>
 								</dl>
