@@ -73,7 +73,7 @@
 				<div id='mainFrame'>
 					<div id='content'>
 						<h1><a href='{$root}/'><img src='{$root}/static/slamd64.png' alt='Slamd64' /></a></h1>
-						<xsl:if test="not(//*:meta[@name='pageName' and @content='download'])">
+						<xsl:if test="not(//*:meta[@name='pageName'])">
 							<div id='externalLinks'>
 								<h2>Related Sites:</h2>
 								<dl>
