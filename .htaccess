@@ -1,9 +1,21 @@
 RewriteEngine on
+RewriteBase /
+
 # / is news
 RewriteRule ^$ news/
+
+# Compatability for links from the old site
+RewriteCond %{QUERY_STRING} ^page=(.+)$
+RewriteRule index.php %1.html?
+
+RewriteRule home / [R=permanent,L]
+RewriteRule ^(contact|consulting).html$ support 
+RewriteRule ^(about|support|thanks).html$ $1 [R=permanent,L]
+
 # If a flat file or directory with the requested name exists, allow it through without rewrite (eg /static/)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-l
+
 # Otherwise, pass it through slamd64-website.fcgi
-RewriteRule ^(.*)$ slamd64-website.fcgi/$1 [L,NS]
+RewriteRule ^(.*)$ slamd64-website.fcgi/$1 [L,NS] 
