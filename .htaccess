@@ -9,6 +9,7 @@ RewriteCond %{QUERY_STRING} ^page=(.+)$
 RewriteRule index.php %1.html?
 
 RewriteRule home / [R=permanent,L]
+RewriteRule ^getslamd64.html$ download
 RewriteRule ^(contact|consulting).html$ support 
 RewriteRule ^(about|support|thanks).html$ $1 [R=permanent,L]
 
